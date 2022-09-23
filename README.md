@@ -14,7 +14,7 @@ Thanks for [D0ot](https://github.com/D0ot) and [EzraRT](https://github.com/EzraR
 
 使用前**务必阅读以下说明**：
 
-1. 程序适用于Ubuntu18~20，其他版本烦请自行检测。
+1. 程序适用于Ubuntu18~20，22暂时不推荐使用。其他版本烦请自行检测。
 2. **重要**：使用前最好更换好国内源，**RoboViz使用前安装好Nvidia显卡驱动**。A卡、集显核显未测试。
 3. 安装前务必确保已经完成2的操作。接着参照[使用方法](#使用方法)进行安装。
 4. 如遇安装失败，可以根据~目录下的robocup.log文件和setup.sh中的命令进行手动测试。
@@ -25,13 +25,13 @@ commandline enter:
 
 国内最好使用gitee：
 ```shell
-wget -O- https://gitee.com/IllyasvielEin/RoboCup3dInstaller/raw/main/ins.sh &
+wget -O- https://gitee.com/IllyasvielEin/RoboCup3dInstaller/raw/main/ins.sh | bash 2>&1 | tee ~/robocup3d.log
 ```
 
 or
 
 ```shell
-wget -O- https://github.com/IllyasvielEin/RoboCup3dInstaller/raw/main/ins.sh &
+wget -O- https://github.com/IllyasvielEin/RoboCup3dInstaller/raw/main/ins.sh | bash 2>&1 | tee ~/robocup3d.log
 ```
 
 指令：
