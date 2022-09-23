@@ -16,11 +16,11 @@ sudo apt install curl -y
 
 if [ ${release_name_short} == 22 ];then
 
-    # colorlog "ubuntu${release_name} hasn't surpport." 31
+    colorlog "ubuntu${release_name} hasn't surpport." 31
 
-    # exit 1
+    exit 1
 
-    sudo apt-get install g++ git make cmake libfreetype6-dev libode-dev libsdl1.2-dev ruby ruby-dev libdevil-dev libboost-dev libboost-thread-dev libboost-regex-dev libboost-system-dev qtbase5-dev qtchooser qt5-qmake
+    sudo apt-get install g++ git make cmake libfreetype6-dev libode-dev libsdl1.2-dev ruby ruby-dev libdevil-dev libboost-dev libboost-thread-dev libboost-regex-dev libboost-system-dev qtbase5-dev qtchooser qt5-qmake -y
 
     git clone https://gitlab.com/robocup-sim/SimSpark.git
 
