@@ -10,9 +10,13 @@ sleep 1
 echo "checking Linux edition"
 linux_uname="$(uname -a)"
 if [[ ! ${linux_uname} =~ "Ubuntu" ]];then
-    colorlog "The Installation only for Ubuntu18~22,
+    if [[ ${linux_uname} =~ "WSL" ]]; then
+	colorlog "You are in Windows Subsystem for Linux" 31
+    else
+	colorlog "The Installation only for Ubuntu18~22,
 Please search for information on https://gitlab.com/robocup-sim/SimSpark/-/wikis/Installation-on-Linux" 31
-    exit 1
+	exit 1
+    fi
 fi
 echo "Linux edition OK"
 
