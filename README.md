@@ -25,13 +25,13 @@ commandline enter:
 
 国内最好使用gitee：
 ```shell
-wget -O- https://gitee.com/IllyasvielEin/RoboCup3dInstaller/raw/main/ins.sh | bash 2>&1 | tee ~/robocup3d.log
+wget -O- https://gitee.com/IllyasvielEin/RoboCup3dInstaller/raw/main/ins.sh | bash
 ```
 
 or
 
 ```shell
-wget -O- https://github.com/IllyasvielEin/RoboCup3dInstaller/raw/main/ins.sh | bash 2>&1 | tee ~/robocup3d.log
+wget -O- https://github.com/IllyasvielEin/RoboCup3dInstaller/raw/main/ins.sh | bash
 ```
 
 指令：
